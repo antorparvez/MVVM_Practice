@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDD2DD"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MVVM Practice"
+        android:textSize="40dp"
+        android:textColor="#303F9F"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/reg_email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/reg_pass"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sing up"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:background="@color/design_default_color_primary"
+        android:id="@+id/reg_btn"/>
+
+
+</LinearLayout>

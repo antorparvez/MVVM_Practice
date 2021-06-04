@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data >
+        <variable
+            name="authViewModel"
+            type="com.eucalyptus.mvvm_practice.ui.auth.AuthViewModel" />
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/login_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#D0D4ED"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MVVM Practice"
+            android:textSize="40dp"
+            android:textColor="#303F9F"
+            android:textStyle="bold"
+            android:layout_marginBottom="100dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:text="@={authViewModel.email}"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:id="@+id/login_email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text="@={authViewModel.pass}"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:id="@+id/login_pass"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:onClick="@{authViewModel::onLoginButtonClick}"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:background="@color/design_default_color_primary"
+            android:id="@+id/login_btn"/>
+
+
+    </LinearLayout>
+
+
+</layout>
